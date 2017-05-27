@@ -1,10 +1,31 @@
 @font-face {
-  font-family: 'bitterbold';
-  src: url('../fonts/bitter-bold-webfont.eot');
-  src: url('../fonts/bitter-bold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/bitter-bold-webfont.woff') format('woff'),
-  url('../fonts/bitter-bold-webfont.ttf') format('truetype'),
-  url('../fonts/bitter-bold-webfont.svg#bitterbold') format('svg');
+  font-family: 'proximanova-black';
+  src: url('../fonts/proximanova-black-webfont.woff') format('woff'),
+  url('../fonts/proximanova-black-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proximanova-bold';
+  src: url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+  url('../fonts/proximanova-bold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proximanova-reg';
+  src: url('../fonts/proximanova-reg-webfont.woff') format('woff'),
+  url('../fonts/proximanova-reg-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proximanova-xbold';
+  src: url('../fonts/proximanova-xbold.woff') format('woff'),
+  url('../fonts/proximanova-xbold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

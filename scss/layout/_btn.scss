@@ -1,0 +1,98 @@
+.btn-wrap {
+
+  &.style-a .btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #343434;
+    text-decoration: none;
+    padding: 7px 20px;
+    background-image: linear-gradient(#ffd10d 0%, #ffbe0d 100%);
+    border:none;
+    border-top: 3px solid #ffe056;
+    border-radius: 20px;
+    margin-top: 4px;
+    @include transition(background .3s);
+
+    @media (min-width: $bp-small) {
+      padding: 7px 35px 11px;
+      font-size: 14px;
+      border-top: 5px solid #ffe056;
+    }
+
+    &:hover {
+      background-image: linear-gradient(#ffbe0d 0%, #ffd10d 100%);
+    }
+  }
+
+  &.style-b .btn {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 34px 18px;
+    font-family: $proximanova-bold;
+    background-image: linear-gradient(#00e0b3 0%, #00c186 100%);
+    border-top: 5px solid #4de9cb;
+    border-radius: 60px;
+    margin-top: 4px;
+    @include transition(background .3s);
+
+    @media (min-width: $bp-small) {
+      padding: 20px 60px 25px;
+    }
+
+    &:hover {
+      background-image: linear-gradient(#00c186 0%, #00e0b3 100%);
+    }
+  }
+
+  &.style-d .btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #343434;
+    text-decoration: none;
+    padding: 18px 45px 18px;
+    background-image: linear-gradient(#ffd10d 0%, #ffbe0d 100%);
+    border-top: 5px solid #ffe056;
+    border-radius: 60px;
+    margin-top: 4px;
+    @include transition(background .3s);
+    font-family: $proximanova-bold;
+
+    @media (min-width: $bp-small) {
+      padding: 24px 60px 26px;
+      font-size: 18px;
+    }
+
+    &:hover {
+      background-image: linear-gradient(#ffbe0d 0%, #ffd10d 100%);
+    }
+  }
+
+  &.style-c .btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 20px;
+    background-image: linear-gradient(#00e0b3 0%, #00c186 100%);
+    border:none;
+    border-top: 3px solid #4de9cb;
+    border-radius: 20px;
+    margin-top: 4px;
+    @include transition(background .3s);
+
+    @media (min-width: $bp-small) {
+      padding: 7px 35px 11px;
+      font-size: 14px;
+      border-top: 5px solid #4de9cb;
+    }
+
+    &:hover {
+      background-image: linear-gradient(#00c186 0%, #00e0b3 100%);
+    }
+  }
+}

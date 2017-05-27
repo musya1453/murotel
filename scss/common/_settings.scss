@@ -1,10 +1,36 @@
-//$icons: sprite-map('icons/*.png', $spacing: 8px, $layout: 'smart');
+$icons: sprite-map('icons/*.png', $spacing: 8px, $layout: 'smart');
 //$h-sprites: sprite-map('h-sprites/*.png',$layout: 'vertical', $spacing: 8px);
 //$v-sprites: sprite-map('v-sprites/*.png', $layout: 'horizontal', $spacing: 8px);
 
 $experimental-support-for-svg: true;
 $experimental-support-for-opera: false;
 
-//width
+//widths
+$width-xsmall: 90%;
+//xs < $bp-small
+$bp-small: 768px;
+$width-small: 710px;
+//$bp-middle > sm >= $bp-small
+$bp-middle: 992px;
+$width-middle: 981px;
+//$bp-large > md >= $bp-middle
+$bp-large: 1200px;
+$width-large: 1140px;
 
-//fonts
+//offsets
+$container-padding-left: 15px;
+$container-padding-right: 15px;
+
+$container-fluid-padding-left: 0;
+$container-fluid-padding-right: 0;
+
+$row-margin-left: -15px;
+$row-margin-right: -15px;
+
+$col-padding-left: 15px;
+$col-padding-right: 15px;
+
+$proximanova-reg: 'proximanova-reg';
+$proximanova-bold: 'proximanova-bold';
+$proximanova-black: 'proximanova-black';
+$proximanova-xbold: 'proximanova-xbold';

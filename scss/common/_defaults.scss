@@ -5,7 +5,17 @@ html {
 body {
   min-height: 100%;
   height: 100%;
-  font-size: 14px;
+  font-size: 13px;
+  font-family: $proximanova-reg;
+  color: #343434;
+
+  @media (min-width: $bp-small) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $bp-middle) {
+    font-size: 18px;
+  }
 }
 
 .clearfix {
@@ -24,9 +34,54 @@ body {
 }
 
 .pull-left {
-  float: left;
+
+  @media (min-width: $bp-small) {
+    float: left;
+  }
 }
 
 .pull-right {
-  float: right;
+  @media (min-width: $bp-small) {
+    float: right;
+  }
+}
+
+* {
+  @include box-sizing(border-box);
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+  font-family: $proximanova-black;
+  text-transform: uppercase;
+
+  @media (min-width: $bp-small) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $bp-middle) {
+    font-size: 36px;
+  }
+}
+
+.outer-wrapper {
+  overflow-x: hidden;
+}
+
+.el-with-animation {
+  opacity: 0;
+  @include transition(opacity .3s);
+
+  &.animated {
+    opacity: 1;
+  }
+}
+
+a, input, select, button {
+  outline: none !important;
 }

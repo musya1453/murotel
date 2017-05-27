@@ -1,33 +1,438 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Name</title>
-    <meta charset="utf-8" />
-    <meta name="HandheldFriendly" content="false" />
-    <meta name="viewport" content="user-scalable=yes, width=device-width" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <script type="text/javascript" src="theme/js/lib/html5.js"></script>
-    <script type="text/javascript" src="theme/js/jquery.min.js"></script>
-    <script type="text/javascript" src="theme/js/js.js"></script>
-    <link href="theme/css/styles.css" rel="stylesheet" type="text/css">
+  <title>Муротель</title>
+  <meta charset="utf-8"/>
+  <meta name="HandheldFriendly" content="false"/>
+  <meta name="viewport" content="user-scalable=yes, width=device-width"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <script type="text/javascript" src="theme/js/lib/html5.js"></script>
+  <script type="text/javascript" src="theme/js/jquery.min.js"></script>
+  <script type="text/javascript" src="theme/js/lib/jquery.flexslider.js"></script>
+  <script type="text/javascript" src="theme/js/lib/bootstrap-modal.min.js"></script>
+  <script type="text/javascript" src="theme/js/js.js"></script>
+  <link href="theme/css/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 
 <body>
+<div class="outer-wrapper">
 <header class="header-wrapper">
-    <div class="header">
+  <div class="container">
+    <div class="header-top">
+      <a href="#" class="logo"><img src="theme/images/logo.png" alt=""/></a>
 
+      <div class="middle-part">
+        <strong> Наш адрес:</strong>
+        г. Хабаровск, ул. Краснареченская 161 <br/>
+        <div class="form-type-text">
+          <input type="text" placeholder="Поиск по сайту"/>
+        </div>
+      </div>
+      <div class="right-part">
+        <span>+7 (4212) 62-38-78</span>
+        <span>+7 (909) 805-44-55</span>
+
+        <div class="btn-wrap style-a">
+          <a href="#" class="btn" data-toggle="modal" data-target="#zakazmodal">Заказать звонок</a>
+        </div>
+      </div>
     </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Главная </a></li>
+        <li><a href="#"> Правила приема </a></li>
+        <li><a href="#"> Номера и цены </a></li>
+        <li><a href="#"> Галерея </a></li>
+        <li><a href="#"> Отзывы </a></li>
+        <li><a href="#"> Контакты</a></li>
+      </ul>
+      <a href="#" class="btn-menu"><span></span></a>
+    </nav>
+  </div>
 </header>
 
-<div class="content-wrapper"></div>
+<div class="content-wrapper">
+<section class="section-top">
+  <div class="container">
+    <h1 class="el-with-animation fadeInLeft">Услуги передержки животных</h1>
 
+    <div class="sub-title el-with-animation fadeInLeft">Передержка кошек, собак и других животных в Хабаровске</div>
+    <div class="btn-wrap style-b el-with-animation bounceInUp">
+      <a href="#" class="btn"  data-toggle="modal" data-target="#zakazmodal-1">Забронировать номер</a>
+    </div>
+  </div>
+</section>
+<section class="section-services">
+  <div class="container">
+    <h2>Наши услуги</h2>
+
+    <div class="row">
+      <div class="col-sm-4 el-with-animation bounceIn">
+        <div class="item">
+          <div class="img"><img src="theme/images/tmp/img-1.jpg" alt=""/></div>
+          <h4>Передержка собак</h4>
+
+          <p>Собаки в холке не более 40 см</p>
+
+          <div class="btn-wrap style-a">
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 el-with-animation bounceIn">
+        <div class="item">
+          <div class="img"><img src="theme/images/tmp/img-1.jpg" alt=""/></div>
+          <h4>Передержка кошек</h4>
+
+          <p>Любых пород и размеров</p>
+
+          <div class="btn-wrap style-a">
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 el-with-animation bounceIn">
+        <div class="item">
+          <div class="img"><img src="theme/images/tmp/img-1.jpg" alt=""/></div>
+          <h4>Передержка др. животных</h4>
+
+          <p>Птицы, грызуны, рыбки и другие</p>
+
+          <div class="btn-wrap style-a">
+            <a href="#" class="btn">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-advantages">
+  <div class="container">
+    <h2 class=" el-with-animation fadeInLeft"> Преимущества</h2>
+
+    <div class="sub-title">
+      Комфорт для питомцев и выгода для владельцев
+    </div>
+
+    <div class="items">
+      <div class="item  el-with-animation fadeInDown">
+        <div class="img"><img src="theme/images/tmp/el-1.png" alt=""/></div>
+        <p>Удобное месторасположение
+          в чертах города</p>
+      </div>
+
+      <div class="item el-with-animation fadeInDown">
+        <div class="img"><img src="theme/images/tmp/el-2.png" alt=""/></div>
+        <p>Опытные ветеринарные врачи
+          и квалифицированный
+          персонал</p>
+      </div>
+
+      <div class="item el-with-animation fadeInDown">
+        <div class="img"><img src="theme/images/tmp/el-3.png" alt=""/></div>
+        <p>Индивидуальный подход к
+          каждому питомцу</p>
+      </div>
+
+      <div class="item el-with-animation fadeInDown">
+        <div class="img"><img src="theme/images/tmp/el-4.png" alt=""/></div>
+        <p>Подарочный набор каждому
+          питомцу</p>
+      </div>
+
+      <div class="item el-with-animation fadeInDown">
+        <div class="img"><img src="theme/images/tmp/el-5.png" alt=""/></div>
+        <p>Скидки 5% на корма и 10% на
+          прочий ассортимент</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-fast">
+  <div class="container">
+    <h2 class="el-with-animation fadeInDown">быстрое оформление </h2>
+
+    <div class="sub-title el-with-animation fadeInLeft"> Минимальный пакет документов для быстрого оформления</div>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="item el-with-animation bounceInUp">
+          <div class="img">
+            <img src="theme/images/tmp/ico-1.png" alt=""/>
+            <span class="count">1</span>
+          </div>
+          <div class="text">
+            <h4>Оформляете заказ</h4>
+
+            <p>на сайте или по телефону</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="item el-with-animation bounceInUp">
+          <div class="img">
+            <img src="theme/images/tmp/ico-2.png" alt=""/>
+            <span class="count">2</span>
+          </div>
+          <div class="text"><h4>Доставляете животное</h4>
+
+            <p>самостоятельно или в
+              нашем зоотакси</p></div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="item el-with-animation bounceInUp">
+          <div class="img">
+            <img src="theme/images/tmp/ico-3.png" alt=""/>
+            <span class="count">3</span>
+          </div>
+          <div class="text">
+            <h4>Оформляете договор</h4>
+
+            <p>на содержание животного</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="item el-with-animation bounceInUp">
+          <div class="img">
+            <img src="theme/images/tmp/ico-4.png" alt=""/>
+            <span class="count">4</span>
+          </div>
+          <div class="text">
+            <h4>Теперь вы спокойны</h4>
+
+            <p>ваше животное
+              в надежных руках</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-style-a">
+  <div class="container">
+
+    <div class="row el-with-animation fadeInLeft">
+      <div class="col-md-6 col-lg-5">
+        <h2>Закажите зоотакси </h2>
+
+        <p>Доставка животных в любую точку города
+          специализированным автотранспортом</p>
+
+        <div class="btn-wrap style-d">
+          <a href="#" class="btn"  data-toggle="modal" data-target="#zakazmodal">Заказать зоотакси</a>
+        </div>
+        <div class="desc">Поездки по городу <br/>
+          от <strong>150 руб.</strong></div>
+      </div>
+    </div>
+
+    <div class="imgs el-with-animation fadeIn">
+      <img src="theme/images/tmp/imgs.png" alt=""/>
+    </div>
+  </div>
+</section>
+<section class="section-reviews">
+  <div class="container">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <div class="item">
+            <div class="img"><img src="theme/images/tmp/ava.png" alt=""/></div>
+            <div class="text">
+              <p>
+                Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает
+                широкому кругу (специалистов) участие в формировании форм развития. Равным образом рамки и место
+                обучения кадров играет важную роль.
+              </p>
+              <span class="author">- Евгений Орлов</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img"><img src="theme/images/tmp/ava.png" alt=""/></div>
+            <div class="text">
+              <p>
+                Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает
+                широкому кругу (специалистов) участие в формировании форм развития. Равным образом рамки и место
+                обучения кадров играет важную роль.
+              </p>
+              <span class="author">- Евгений Орлов</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="img"><img src="theme/images/tmp/ava.png" alt=""/></div>
+            <div class="text">
+              <p>
+                Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает
+                широкому кругу (специалистов) участие в формировании форм развития. Равным образом рамки и место
+                обучения кадров играет важную роль.
+              </p>
+              <span class="author">- Евгений Орлов</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img"><img src="theme/images/tmp/ava.png" alt=""/></div>
+            <div class="text">
+              <p>
+                Повседневная практика показывает, что дальнейшее развитие различных форм деятельности обеспечивает
+                широкому кругу (специалистов) участие в формировании форм развития. Равным образом рамки и место
+                обучения кадров играет важную роль.
+              </p>
+              <span class="author">- Евгений Орлов</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="section-contacts">
+  <div class="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e5c516f1ca02ef29d8ca8c01e702c68968e17925cc27078c3a663e3cd1d2c50&amp;width=100%25&amp;height=360&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+  <div class="container">
+    <div class="contact-wrapper el-with-animation fadeInLeft">
+      <h2>Наши контакты</h2>
+      <span><strong>Наш адрес:</strong> г. Хабаровск, ул. Краснареченская 161</span>
+      <span><strong>Телефоны:</strong> +7 (4212) 62-38-78; +7 (909) 805-44-55</span>
+    </div>
+  </div>
+</section>
+</div>
 
 
 <footer class="footer-wrapper">
-    <div class="footer">
+  <div class="footer-top container">
+    <a href="#" class="logo"><img src="theme/images/logo-1.png" alt=""/></a>
 
+    <div class="menu">
+      <ul>
+        <li><a href="#">Главная </a></li>
+        <li><a href="#">Правила приема </a></li>
+        <li><a href="#">Номера и цены </a></li>
+        <li><a href="#"> Зоомагазин </a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Галерея</a></li>
+        <li><a href="#"> Отзывы</a></li>
+        <li><a href="#"> Контакты</a></li>
+      </ul>
     </div>
+
+    <div class="right-part">
+      <p>г. Хабаровск, ул. Краснареченская 161</p>
+      <p><strong>+7 (4212) 62-38-78; +7 (909) 805-44-55</strong></p>
+      <div class="btn-wrap style-a">
+        <a href="#" class="btn"  data-toggle="modal" data-target="#zakazmodal">Заказать звонок</a>
+      </div>
+      <ul class="social">
+        <li class="soc-1"><a href="#"> </a></li>
+        <li class="soc-2"><a href="#"> </a></li>
+        <li class="soc-3"><a href="#"> </a></li>
+        <li class="soc-4"><a href="#"> </a></li>
+        <li class="soc-5"><a href="#"> </a></li>
+        <li class="soc-6"><a href="#"> </a></li>
+        <li class="soc-7"><a href="#"> </a></li>
+      </ul>
+    </div>
+  </div>
+   <div class="footer-bottom container">
+            <span class="pull-left">
+              Муротель © 2017. Все права защищены
+            </span>
+
+            <span class="pull-right">
+              ИНН 2721221031 ОГРН 1152724012748
+            </span>
+          </div>
 </footer>
+</div>
+<div class="modal fade" id="zakazmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4>Обратный звонок</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-type-text">
+          <input type="text" placeholder="ФИО"/>
+        </div>
+
+        <div class="form-type-text">
+          <input type="text" placeholder="Телефон"/>
+        </div>
+        <div class="btn-wrap style-a">
+          <input type="submit" value="Заказать звонок" class="btn"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="zakazmodal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4>Забронировать номер</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-type-text">
+          <input type="text" placeholder="ФИО"/>
+        </div>
+        <div class="form-type-text">
+          <input type="text" placeholder="Email"/>
+        </div>
+        <div class="form-type-text">
+          <input type="text" placeholder="Телефон"/>
+        </div>
+        <div class="form-type-select">
+          <select name="">
+            <option value="">Животное</option>
+            <option value="">Животное</option>
+            <option value="">Животное</option>
+          </select>
+        </div>
+        <div class="form-type-select">
+          <select name="" >
+            <option value="">Тип номера</option>
+            <option value="">Тип номера</option>
+            <option value="">Тип номера</option>
+          </select>
+        </div>
+
+        <div class="row dates">
+          <div class="col col-sm-6">
+            <div class="form-type-text">
+              <input type="text" placeholder="Дата заезда"/>
+            </div>
+          </div>
+
+          <div class="col col-sm-6">
+            <div class="form-type-text">
+              <input type="text" placeholder="Дата выезда"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-type-textarea">
+          <textarea placeholder="Примечание"></textarea>
+        </div>
+
+        <div class="btn-wrap style-c">
+          <input type="submit" value="Забронировать номер" class="btn"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,502 @@
+.section-top {
+  padding: 40px 0 80px;
+  background-color: #f8f8f8;
+  background-image: image-url('bg/top.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  text-align: center;
+
+  @media (min-width: $bp-small) {
+    padding: 90px 0 220px;
+  }
+
+  @media (min-width: $bp-middle) {
+    padding: 107px 0 257px;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: $proximanova-black;
+    margin: 0 0 14px;
+    line-height: 1;
+
+    @media (min-width: $bp-small) {
+      font-size: 36px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 46px;
+    }
+  }
+
+  .sub-title {
+    font-size: 15px;
+    margin-bottom: 20px;
+
+    @media (min-width: $bp-small) {
+      font-size: 20px;
+      margin-bottom: 31px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 24px;
+    }
+  }
+}
+
+.section-services {
+  padding: 30px 0;
+  text-align: center;
+
+  @media (min-width: $bp-small) {
+    padding: 40px 0;
+  }
+
+  @media (min-width: $bp-middle) {
+    padding: 50px 0 60px;
+  }
+
+  h2 {
+    margin: 0 0 30px;
+
+    @media (min-width: $bp-middle) {
+      margin: 0 0 38px;
+    }
+  }
+
+  .img {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0 0 15px;
+
+    @media (min-width: $bp-small) {
+      margin: 0 0 25px;
+    }
+  }
+
+  h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: $proximanova-xbold;
+    margin: 0 0 15px;
+
+    @media (min-width: $bp-small) {
+      font-size: 18px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 20px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .item {
+    border: 1px solid #e8e8e8;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+
+    @media (min-width: $bp-small) {
+      padding: 28px 10px 20px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $bp-middle) {
+      padding: 37px 20px 23px;
+    }
+  }
+
+  .btn-wrap.style-a a {
+    font-size: 14px;
+
+    @media (min-width: $bp-small) {
+      font-size: 16px;
+    }
+  }
+}
+
+.section-advantages {
+  padding: 20px 0;
+  background: image-url('bg/bg-a.jpg');
+  text-align: center;
+  background-attachment: fixed;
+
+  @media (min-width: $bp-small) {
+    padding: 40px 0 35px;
+  }
+
+  @media (min-width: $bp-middle) {
+    padding: 51px 0 32px;
+  }
+
+  h2 {
+    margin: 0 0 4px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .sub-title {
+    margin-bottom: 25px;
+    font-size: 18px;
+
+    @media (min-width: $bp-small) {
+      margin-bottom: 35px;
+      font-size: 20px;
+    }
+
+    @media (min-width: $bp-middle) {
+      margin-bottom: 40px;
+      font-size: 22px;
+    }
+  }
+
+  .items .item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 25px 25px;
+    font-family: $proximanova-bold;
+
+    @media (min-width: $bp-small) {
+      width: 270px;
+    }
+
+    @media (min-width: $bp-middle) {
+      margin: 0 40px 12px;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.section-fast {
+  padding: 30px 0 50px;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $bp-small) {
+    padding: 50px 0 75px;
+  }
+
+  &:before {
+    @include pseudo-block($top: 50%, $left: 0);
+    @include translateY(-50%);
+    background: image-url('bg/foot.png');
+    height: 158px;
+    width: 1750px;
+  }
+
+  h2 {
+    margin: 0 0 5px;
+  }
+
+  .item {
+    margin-bottom: 20px;
+
+    @media (min-width: $bp-small) {
+
+      margin-bottom: 0;
+    }
+  }
+
+  .img {
+    display: inline-block;
+    width: 114px;
+    height: 114px;
+    border: 2px solid #e3e3e3;
+    @include border-radius(50%);
+    position: relative;
+    margin-bottom: 9px;
+    background: #fff;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include translate(-50%, -50%);
+    }
+
+    .count {
+      display: inline-block;
+      color: #fff;
+      font-size: 24px;
+      font-family: $proximanova-bold;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 5px;
+
+      &:before {
+        @include pseudo-block($top: 50%, $left: 50%);
+        width: 42px;
+        height: 42px;
+        background: #00cc9c;
+        @include border-radius(50%);
+        @include translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+  }
+
+  h4 {
+    font-family: $proximanova-bold;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .sub-title {
+    margin-bottom: 50px;
+    font-size: 18px;
+
+    @media (min-width: $bp-small) {
+      font-size: 22px;
+      margin-bottom: 83px;
+    }
+  }
+
+  .text {
+    line-height: 1.6;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.section-style-a {
+  padding: 20px 0;
+  background: image-url('bg/bg-b.jpg');
+  color: #fff;
+  text-align: center;
+  background-attachment: fixed;
+
+  @media (min-width: $bp-small) {
+    padding: 45px 0 35px;
+  }
+
+  @media (min-width: $bp-middle) {
+    padding: 54px 0 45px;
+  }
+
+  h2 {
+    margin: 0 0 30px;
+  }
+
+  p {
+    margin: 0 0 30px;
+    font-size: 18px;
+
+    @media (min-width: $bp-small) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 22px;
+    }
+  }
+
+  .btn-wrap {
+    margin-bottom: 35px;
+  }
+
+  .desc {
+    font-family: $proximanova-reg;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    @media (min-width: $bp-small) {
+      font-size: 30px;
+    }
+
+    @media (min-width: $bp-middle) {
+      font-size: 36px;
+    }
+
+    strong {
+      font-family: $proximanova-black;
+      color: #ffd30d;
+    }
+  }
+
+  .imgs {
+    position: absolute;
+    right: -200px;
+    top: 50%;
+    @include translateY(-50%);
+    display: none;
+
+    @media (min-width: $bp-middle) {
+      display: block;
+      width: 700px;
+    }
+
+    @media (min-width: $bp-large) {
+      width: auto;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.section-reviews {
+  padding: 30px 0;
+  text-align: center;
+
+  @media (min-width: $bp-small) {
+    padding: 100px 0 60px;
+    text-align: left;
+  }
+
+  .item {
+    margin-bottom: 20px;
+    @include clearfix();
+    padding: 10px 0 0 10px;
+
+    @media (min-width: $bp-middle) {
+      width: 460px;
+      margin-right: 20px;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $bp-large) {
+      width: 530px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    .img {
+      margin-right: 18px;
+      position: relative;
+
+      @media (min-width: $bp-middle) {
+        text-align: center;
+      }
+
+      @media (min-width: $bp-large) {
+        text-align: left;
+      }
+
+      &:before {
+        @include pseudo-block($top: -10px, $left: -8px);
+        @include oneline-sprite-box($icons, rq-ico);
+      }
+    }
+
+    .img, .text {
+
+      @media (min-width: $bp-small) {
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .text {
+
+      @media (min-width: $bp-small) {
+        width: 70%;
+        line-height: 1.6;
+      }
+
+      @media (min-width: $bp-middle) {
+        width: 100%;
+      }
+
+      @media (min-width: $bp-large) {
+        width: 350px;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .author {
+      display: block;
+      font-family: $proximanova-bold;
+    }
+  }
+
+  .flex-direction-nav {
+    margin: 0;
+    padding: 0;
+
+    li {
+      position: absolute;
+      display: block;
+      top: 50%;
+      @include translateY(-50%);
+
+      &.flex-nav-prev {
+        left: -40px;
+      }
+
+      &.flex-nav-next {
+        right: -40px;
+      }
+
+      a {
+        @include oneline-sprite-box($icons, arr);
+        display: block;
+
+        &.flex-next {
+          @include rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.section-contacts {
+  position: relative;
+
+  .container {
+
+    @media (min-width: $bp-small) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      @include translateY(-50%);
+      z-index: 10;
+    }
+  }
+
+  .contact-wrapper {
+    background: #fff;
+    padding: 20px 15px;
+
+    @media (min-width: $bp-small) {
+      padding: 40px 46px;
+      width: 520px;
+      @include box-shadow(0 0 19px -3px rgba(0, 0, 0, 0.25));
+    }
+
+    h2 {
+      margin: 0 0 24px;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 5px;
+
+      strong {
+        font-family: $proximanova-bold;
+      }
+    }
+  }
+}
