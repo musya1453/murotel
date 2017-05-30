@@ -514,7 +514,7 @@ a, input, select, button {
   left: 15px;
   height: 16px;
   width: 16px;
-  background:  url('../images/icons-s5a6c40e652.png') -15px 0 no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') -32px 0 no-repeat;
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -585,11 +585,46 @@ select {
   right: 10px;
   height: 15px;
   width: 15px;
-  background:  url('../images/icons-s5a6c40e652.png') 0 0 no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') -17px 0 no-repeat;
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.b-breadcrambs {
+  padding: 15px 0;
+  font-size: 15px;
+}
+.b-breadcrambs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.b-breadcrambs ul li {
+  display: inline-block;
+  margin-right: 1px;
+  padding-right: 9px;
+  position: relative;
+}
+.b-breadcrambs ul li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: '/';
+}
+.b-breadcrambs ul li:last-child:before {
+  display: none;
+}
+.b-breadcrambs ul li a {
+  color: #343434;
+  text-decoration: none;
 }
 
 .section-top {
@@ -1014,7 +1049,7 @@ select {
   transform: translateY(-50%);
   height: 51px;
   width: 27px;
-  background:  url('../images/icons-s5a6c40e652.png') -24px -88px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') -24px -88px no-repeat;
 }
 .section-reviews .slick-prev {
   left: -20px;
@@ -1089,7 +1124,7 @@ select {
   left: -8px;
   height: 54px;
   width: 54px;
-  background:  url('../images/icons-s5a6c40e652.png') 0 -139px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') 0 -139px no-repeat;
 }
 @media (min-width: 768px) {
   .section-reviews .item .img, .section-reviews .item .text {
@@ -1162,7 +1197,7 @@ select {
 .section-reviews .flex-direction-nav li a {
   height: 51px;
   width: 27px;
-  background:  url('../images/icons-s5a6c40e652.png') -24px -88px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') -24px -88px no-repeat;
   display: block;
 }
 .section-reviews .flex-direction-nav li a.flex-next {
@@ -1208,6 +1243,204 @@ select {
 }
 .section-contacts .contact-wrapper span strong {
   font-family: "proximanova-bold";
+}
+
+.section-text {
+  padding: 8px 0 60px;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .section-text {
+    font-size: 16px;
+  }
+}
+.section-text h2 {
+  line-height: 1;
+  margin: 0 0 20px;
+}
+.section-text h3 {
+  font-size: 18px;
+  font-family: "proximanova-black";
+  margin: 30px 0 20px;
+  clear: both;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .section-text h3 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .section-text h3 {
+    font-size: 24px;
+  }
+}
+.section-text .item {
+  border: 1px solid #f7f7f7;
+  margin-bottom: 30px;
+}
+.section-text .item:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+@media (min-width: 992px) {
+  .section-text .item {
+    height: 242px;
+  }
+}
+.section-text .slider-for {
+  display: inline-block;
+  overflow: hidden;
+  width: 350px;
+}
+.section-text .slider-for .slick-slide {
+  width: auto !important;
+}
+.section-text .col-md-1 {
+  padding: 0;
+}
+.section-text .title {
+  display: block;
+  font-family: "proximanova-xbold";
+  color: #00cc9c;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.section-text .list-title {
+  display: block;
+  text-transform: uppercase;
+}
+.section-text .description {
+  line-height: 1;
+  padding-left: 10px;
+}
+@media (min-width: 992px) {
+  .section-text .description {
+    padding-left: 25px;
+    line-height: 1.6;
+  }
+}
+.section-text ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.section-text p strong {
+  font-family: "proximanova-bold";
+}
+.section-text .right-el {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.section-text .price {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 54px 20px;
+  line-height: 1.7;
+}
+.section-text .price strong {
+  font-family: "proximanova-xbold";
+  font-size: 22px;
+  display: block;
+}
+.section-text .slider-for, .section-text .slider-nav {
+  margin: 0;
+  padding: 0;
+}
+.section-text .slider-nav {
+  display: inline-block;
+}
+.section-text .slider-nav .slick-list {
+  display: inline-block;
+  padding: 0 !important;
+}
+.section-text .slider-nav .slick-slide {
+  width: 100px !important;
+  margin-bottom: 7px;
+  position: relative;
+}
+.section-text .slider-nav .slick-slide:last-child {
+  margin-bottom: 0;
+}
+.section-text .slider-nav .slick-slide:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.section-text .slider-nav .slick-current:before {
+  -moz-box-shadow: inset 0 0 0px 5px #00cc9c;
+  -webkit-box-shadow: inset 0 0 0px 5px #00cc9c;
+  box-shadow: inset 0 0 0px 5px #00cc9c;
+}
+.section-text .slider-nav li {
+  float: none;
+  display: block;
+}
+.section-text p {
+  margin: 0 0 18px;
+}
+.section-text img {
+  max-width: 100%;
+}
+.section-text .pull-right {
+  float: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .section-text .pull-right {
+    float: right;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.section-text .desc {
+  line-height: 1.7;
+  font-size: 18px;
+  margin: 20px 0;
+}
+@media (min-width: 992px) {
+  .section-text .desc {
+    font-size: 22px;
+    margin: 40px 0;
+  }
+}
+.section-text .desc strong {
+  font-family: "proximanova-xbold";
+}
+.section-text .desc a {
+  color: #00cc9c;
+}
+.section-text .desc a:hover {
+  text-decoration: none;
+}
+.section-text ul.list-style-a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.section-text ul.list-style-a li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+.section-text ul.list-style-a li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 15px;
+  width: 17px;
+  background:  url('../images/icons-s2562ac56d0.png') 0 0 no-repeat;
 }
 
 .header-wrapper {
@@ -1708,37 +1941,37 @@ select {
 .footer-wrapper .right-part .social li.soc-1 a {
   height: 24px;
   width: 24px;
-  background:  url('../images/icons-s5a6c40e652.png') 0 -16px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') 0 -40px no-repeat;
 }
 .footer-wrapper .right-part .social li.soc-2 a {
   height: 24px;
   width: 24px;
-  background:  url('../images/icons-s5a6c40e652.png') 0 -88px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') 0 -88px no-repeat;
 }
 .footer-wrapper .right-part .social li.soc-3 a {
   height: 24px;
   width: 24px;
-  background:  url('../images/icons-s5a6c40e652.png') 0 -64px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') 0 -64px no-repeat;
 }
 .footer-wrapper .right-part .social li.soc-4 a {
   height: 24px;
   width: 24px;
-  background:  url('../images/icons-s5a6c40e652.png') -24px -64px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') -24px -64px no-repeat;
 }
 .footer-wrapper .right-part .social li.soc-5 a {
   height: 24px;
   width: 24px;
-  background:  url('../images/icons-s5a6c40e652.png') -24px -40px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') -24px -40px no-repeat;
 }
 .footer-wrapper .right-part .social li.soc-6 a {
   height: 24px;
   width: 24px;
-  background:  url('../images/icons-s5a6c40e652.png') 0 -40px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') -24px -16px no-repeat;
 }
 .footer-wrapper .right-part .social li.soc-7 a {
   height: 24px;
   width: 24px;
-  background:  url('../images/icons-s5a6c40e652.png') -24px -16px no-repeat;
+  background:  url('../images/icons-s2562ac56d0.png') 0 -16px no-repeat;
 }
 .footer-wrapper .footer-bottom {
   padding: 16px 0;
@@ -2775,6 +3008,87 @@ select {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+/*
+ * jQuery FlexSlider v2.6.3
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url("fonts/flexslider-icon.eot");
+  src: url("fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("fonts/flexslider-icon.woff") format("woff"), url("fonts/flexslider-icon.ttf") format("truetype"), url("fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+* html .flexslider .slides {
+  height: 1%;
+}
+
+.no-js .flexslider .slides > li:first-child {
+  display: block;
 }
 
 /*!
