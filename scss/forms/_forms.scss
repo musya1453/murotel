@@ -1,7 +1,10 @@
 .header-wrapper .form-type-text {
   position: relative;
-  padding-right: 20px;
   display: inline-block;
+
+  @media (min-width: $bp-small) {
+    padding-right: 20px;
+  }
 
   @media (min-width: $bp-middle) {
     display: block;
@@ -18,7 +21,7 @@
   }
 }
 
-input:not([type=submit]):not([type=checkbox]):not([type=radio]), textarea, select {
+input:not([type=submit]):not([type=checkbox]):not([type=radio]):not(.ymaps-2-1-47-input__control), textarea, select {
   border: 1px solid #d7d7d7;
   @include box-shadow(inset 0 0 8px -2px rgba(0, 0, 0, 0.28));
   @include border-radius(20px);

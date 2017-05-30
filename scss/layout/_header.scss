@@ -1,4 +1,9 @@
 .header-wrapper {
+  text-align: center;
+
+  @media (min-width: $bp-small) {
+    text-align: left;
+  }
 
   img {
     max-width: 100%;
@@ -33,13 +38,14 @@
   }
 
   .middle-part {
-    margin-bottom: 15px;
     text-align: center;
+    margin: 0 15px 15px;
+    display: inline-block;
 
     @media (min-width: $bp-small) {
       float: left;
       width: 50%;
-      margin-bottom: 0;
+      margin: 0;
       text-align: left;
     }
 
@@ -68,6 +74,7 @@
 
   .right-part {
     text-align: center;
+    display: inline-block;
 
     @media (min-width: $bp-small) {
       float: left;

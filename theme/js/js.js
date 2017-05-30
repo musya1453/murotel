@@ -1,13 +1,5 @@
 (function ($) {
 
-  $(window).load(function () {
-    $('.flexslider').flexslider({
-      animation: "slide",
-      controlNav: false,
-      prevText: "",
-      nextText: ""
-    });
-  });
 
   $(window).load(function () {
     var $btn = $('.btn-menu');
@@ -17,7 +9,23 @@
 
       $('body').toggleClass('mobile-active');
     })
-  })
+  });
+
+  $(window).load(function () {
+    $('.flexslider .slides').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 960,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }        ]
+    });
+  });
 
   $(window).load(function () {
     var $elms = $('.el-with-animation');

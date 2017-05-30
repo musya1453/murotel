@@ -79,13 +79,13 @@
   }
 
   h4 {
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
     font-family: $proximanova-xbold;
     margin: 0 0 15px;
 
     @media (min-width: $bp-small) {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     @media (min-width: $bp-middle) {
@@ -105,10 +105,12 @@
     @media (min-width: $bp-small) {
       padding: 28px 10px 20px;
       margin-bottom: 0;
+      min-height: 380px;
     }
 
     @media (min-width: $bp-middle) {
       padding: 37px 20px 23px;
+      min-height: 470px;
     }
   }
 
@@ -165,7 +167,7 @@
     font-family: $proximanova-bold;
 
     @media (min-width: $bp-small) {
-      width: 270px;
+      width: 230px;
     }
 
     @media (min-width: $bp-middle) {
@@ -174,6 +176,10 @@
       &:nth-child(3n) {
         margin-right: 0;
       }
+    }
+
+    @media (min-width: $bp-large) {
+      width: 270px;
     }
   }
 }
@@ -350,12 +356,56 @@
 }
 
 .section-reviews {
-  padding: 30px 0;
+  padding: 30px;
   text-align: center;
 
   @media (min-width: $bp-small) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: $bp-middle) {
     padding: 100px 0 60px;
     text-align: left;
+  }
+
+  h2 {
+    margin: 0 0 30px;
+    text-align: center;
+
+    @media (min-width: $bp-small) {
+      margin: 0 0 60px;
+    }
+  }
+
+  .flexslider ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .slick-prev, .slick-next {
+    position: absolute;
+    border: none;
+    @include text-hide();
+    top: 50%;
+    @include translateY(-50%);
+    @include oneline-sprite-box($icons, arr)
+  }
+
+  .slick-prev {
+    left: -20px;
+
+    @media (min-width: $bp-middle) {
+      left: -40px;
+    }
+  }
+
+  .slick-next {
+    right: -20px;
+    @include transform(translateY(-50%) rotate(180deg));
+
+    @media (min-width: $bp-middle) {
+      right: -40px;
+    }
   }
 
   .item {
@@ -380,11 +430,13 @@
     }
 
     .img {
-      margin-right: 18px;
       position: relative;
+      max-width: 140px;
+      margin: 0 auto 15px;
 
       @media (min-width: $bp-middle) {
         text-align: center;
+        margin: 0 15px 0 0;
       }
 
       @media (min-width: $bp-large) {
@@ -442,11 +494,27 @@
       @include translateY(-50%);
 
       &.flex-nav-prev {
-        left: -40px;
+        left: -20px;
+
+        @media (min-width: $bp-small) {
+          left: -10px;
+        }
+
+        @media (min-width: $bp-middle) {
+          left: -20px;
+        }
       }
 
       &.flex-nav-next {
-        right: -40px;
+        right: -20px;
+
+        @media (min-width: $bp-small) {
+          right: -10px;
+        }
+
+        @media (min-width: $bp-middle) {
+          right: -20px;
+        }
       }
 
       a {
@@ -465,15 +533,12 @@
   position: relative;
 
   .container {
-
-    @media (min-width: $bp-small) {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      @include translateY(-50%);
-      z-index: 10;
-    }
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    @include translateY(-50%);
+    z-index: 10;
   }
 
   .contact-wrapper {
